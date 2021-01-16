@@ -1,9 +1,11 @@
 body {
     background: #93ffdf;
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 200px 0;
+    font-size: 0.88em;
 }
 
 .container {
@@ -20,6 +22,7 @@ body {
 .form {
     padding: 0 3rem 0;
     width: 19rem;
+    text-align: center;
 }
 
 .container__img {
@@ -36,6 +39,7 @@ body {
     color: #009b6c;
     margin-bottom: 50px;
     text-align: center;
+    font-weight: 600;
 }
 
 .form__body {
@@ -48,4 +52,46 @@ body {
 
 .form__body input {
     width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 0.625rem;
+    outline-color: #009b6c;
+    border: 1px solid #93ffdf;
+}
+
+.form__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.75em;
+    margin-bottom: 3.125rem;
+}
+
+.form__footer .checkbox {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.checkbox label {
+    margin-left: 0.1rem;
+}
+
+.form__btns .btn {
+    display: inline-block;
+    background: #93ffdf;
+    padding: 10px 20px;
+    border-radius: 1.25rem;
+    color: #009b6c;
+    text-decoration: none;
+    font-weight: 600;
+    border: 2px solid #93ffdf;
+    transition: .3s ease-in-out;
+}
+
+.btn:hover,
+.btn:active,
+.btn.btn--active {
+    border: 2px solid #93ffdf;
+    background: #fff;
 }
